@@ -1,0 +1,11 @@
+﻿Name: Orchard.React
+AntiForgery: enabled
+Author: Radio Systems Corporation
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.0
+Description: Module that allows you to write React-Redux code in one or more custom modules that gets compiled into single React App
+Category: React
+Features:
+    Orchard.React:
+        Description: Harvests and compiles react code from orchard modules

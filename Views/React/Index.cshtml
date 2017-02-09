@@ -1,0 +1,11 @@
+﻿@model Orchard.React.ViewModels.ReactViewModel
+
+<div id="orchard-react"></div>
+
+@using (Script.Foot()) {
+    <script>
+        var initialUserState = JSON.parse('@Html.Raw(Model.UserJson)');
+    </script>
+    <script src="@Url.Content("~/Modules/Orchard.React/Scripts/Orchard.React.js")"></script>
+}
+

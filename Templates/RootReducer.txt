@@ -1,0 +1,15 @@
+﻿import {combineReducers} from "redux";
+import {routerReducer} from "react-router-redux";
+import userReducer from "./userReducer";
+import modalReducer from "./modalReducer";
+
+$$ReducerImports$$
+
+const rootReducer = combineReducers({
+    routing: routerReducer,
+	user: userReducer,
+	modal: modalReducer,
+$$ReducerRegistration$$
+});
+
+export default rootReducer;
