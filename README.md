@@ -6,6 +6,7 @@ To make use of this module. Enable it, and start writing React-Redux code in you
 need to add to make use of this module is a *routes.js* file and one or more redux reducers. (You aren't required to have any reducers, the routes file is all that is absolutely necessary, but if you build a full redux style app, you'll need reducers).
 You must follow the following folder structure:
 
+```
 +-- MyModuleName
 +-- _React
 |   +--_routes
@@ -13,16 +14,22 @@ You must follow the following folder structure:
 |   +--_reducers
 |   |   +--reducer1.js
 |   |   +--reducer2.js
+```
 
 #Defining Routes
+Documentation to be added
 
 #Defining Reducers
+Documentation to be added
 
 #Authenticating React Routes
+Documentation to be added
 
 #Modal System
+Documentation to be added
 
 ##Extending the modal System
+Documentation to be added
 
 #Custom Redux Middleware
 Documentation to be added
