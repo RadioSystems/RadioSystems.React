@@ -6,8 +6,7 @@ Once you download or install this module and include it in your orchard modules 
 
 1. Ensure NodeJS and NPM are installed on your system. [Download Here](https://nodejs.org/en/)
 
-2. In the module src, there is a **Templates** folder. Copy the file PackageJson.text to the Orchard.Web folder and rename it to *package.json*. Copy the WebpackConfig.txt file 
-to the Orchard.Web folder and rename it to *webpack.config.js*.
+2. In the module src, there is a **Templates** folder. Copy the *package.json* file and *webpack.config.js* to the Orchard.Web folder.
 
 3. If you are doing local Orchard development, you must configure you Orchard instance to run at the root of the local site instead of the default http://localhost:30321/OrchardLocal
 
