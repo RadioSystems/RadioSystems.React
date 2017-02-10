@@ -185,3 +185,6 @@ Documentation to be added
 
 #Custom Redux Middleware
 Documentation to be added
+
+#Sample
+A sample custom orchard module that uses this module to create a React application will we added to this organizations list of repos soon!
