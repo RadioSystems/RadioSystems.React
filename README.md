@@ -32,7 +32,9 @@ Once you download or install this module and include it in your orchard modules 
 
 8. **NOTE:** In order to use the built in Alert, Confirm, and modal system you'll have to include a copy of jQuery and Bootstrap in your theme. 
 
-You must place a folder called React or ReactUI at the top level of your module. The two main items that you will
+#Writing React code in your own module
+
+To write code in your own module, you must place a folder called React or ReactUI at the top level of your module. The two main items that you will
 need to add to make use of this module is a *routes.js* file and one or more redux reducers. (You aren't required to have any reducers, the routes file is all 
 that is absolutely necessary, but if you build a full redux style app, you'll need reducers).
 You must follow the following folder structure:
