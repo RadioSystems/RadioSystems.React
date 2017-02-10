@@ -138,6 +138,7 @@
     <Content Include="ReactBase\components\modals\ModalTypes.js" />
     <Content Include="ReactBase\components\AccessDeniedPage.js" />
     <Content Include="ReactBase\components\NotFoundPage.js" />
+    <Content Include="ReactBase\components\OrchardReactWelcomePage.js" />
     <Content Include="ReactBase\containers\ModalContainer.js" />
     <Content Include="ReactBase\containers\OrchardReactApp.js" />
     <Content Include="ReactBase\handlers\ModalActionsHandler.js" />
@@ -154,10 +155,9 @@
     <Content Include="Styles\Styles.css" />
     <Content Include="Styles\Styles.min.css" />
     <Content Include="Templates\ModalMap.txt" />
-    <Content Include="Templates\PackageJson.txt" />
     <Content Include="Templates\RootReducer.txt" />
     <Content Include="Templates\Routes.txt" />
-    <Content Include="Templates\WebpackConfig.txt" />
+    <Content Include="Templates\webpack.config.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -191,6 +191,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\React\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Templates\package.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

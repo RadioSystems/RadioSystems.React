@@ -7,7 +7,7 @@ module.exports = {
         "RadioSystems.React": "./Modules/RadioSystems.React/ReactBase/index.js"
     },
     output: {
-        filename: "./Modules/[name]/Scripts/[name].js"
+        filename: "./Modules/[name]/Scripts/Orchard.React.js"
     },
     devtool: "source-map",
     module: {

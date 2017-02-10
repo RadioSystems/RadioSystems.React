@@ -1,13 +1,14 @@
 ﻿import React, {Component} from "react";
 import {render} from "react-dom";
 import {Provider} from "react-redux";
-import {Router, Route, browserHistory} from "react-router";
+import {Router, Route, IndexRoute, browserHistory} from "react-router";
 import {syncHistoryWithStore} from "react-router-redux";
 import configureStore from "./store/configureStore";
 import routes from "./routes/routes";
 import Authorizer from "./authorizer/Authorizer";
 
 import OrchardReactApp from "./containers/OrchardReactApp";
+import OrchardReactWelcomePage from "./components/OrchardReactWelcomePage";
 import AccessDeniedPage from "./components/AccessDeniedPage";
 import NotFoundPage from "./components/NotFoundPage";
 
@@ -22,8 +23,9 @@ render(
     <Provider store={store}>
         <Router history={history}>
             <Route path="/react" component={OrchardReactApp}>
+                <IndexRoute component={OrchardReactWelcomePage}/>
                 {routes.map((route, index) => {
-                    var routeProps = route.props;
+                    var routeProps = route.props || {};
                     if (typeof(route) === "function") {
                         routeProps = route(authorize, store).props;
                     }

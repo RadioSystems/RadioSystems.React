@@ -29,7 +29,9 @@ to the Orchard.Web folder and rename it to *webpack.config.js*.
    - If you download the task runner, follow the instructions listed there. You can also bind the webpack task to build events in VS if you use the task runner.
    - either of these options will build an *Orchard.React.js* file and *Orchard.React.js.map* file. You don't have to do anything with these, they are already loaded by the module.
 
-7. Open http://localhost:30321/react to see the Orchard React app in action.
+7. Login to Orchard and open http://localhost:30321/react to see the Orchard React app in action. **You'll have to be authenticated**
+
+8. **NOTE:** In order to use the built in Alert, Confirm, and modal system you'll have to include a copy of jQuery and Bootstrap in your theme. 
 
 You must place a folder called React or ReactUI at the top level of your module. The two main items that you will
 need to add to make use of this module is a *routes.js* file and one or more redux reducers. (You aren't required to have any reducers, the routes file is all 
@@ -142,8 +144,6 @@ user = {
 #Actions made available as props
 The React module also makes a handful of actions available via props to any top level container components. These actions are
 
-- login()
-- logout()
 - showAlert(alertText)
 - showConfirm(confirmText, confirmFunction, cancelFunction?)
 - showModal(modalType, modalProps) 

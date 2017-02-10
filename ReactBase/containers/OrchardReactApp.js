@@ -1,4 +1,5 @@
-﻿import React, {Component, cloneElement} from "react";
+﻿import "babel-polyfill";
+import React, {Component, cloneElement} from "react";
 import {Link} from "react-router";
 import {connect} from "react-redux";
 import ModalContainer from "./ModalContainer";
@@ -13,11 +14,27 @@ class OrchardReactApp extends Component {
     authorize(permission) {
         return Authorizer.authorize(permission, this.props.user.permissions);
     }
+    login() {
+        window.location = "/users/account/logon";
+    }
+    logout() {
+        window.location = "/users/account/logoff";
+    }
     render() {
+        const jqueryAndBootstrapDefined = typeof($) !== "undefined" && typeof($.fn.modal) !== "undefined";
         return (
             <div className="orchard-react-container">
-                {cloneElement(this.props.children, Object.assign({}, this.props, {authorize: this.authorize}))}
-                <ModalContainer />
+                {
+                    cloneElement(this.props.children, Object.assign({}, this.props,
+                        {   
+                            authorize: this.authorize
+                        })
+                    )
+                }
+                {
+                  //only load modals if bootstrap is present
+                   jqueryAndBootstrapDefined ?  <ModalContainer /> : null
+                }
             </div>    
         );
     }
