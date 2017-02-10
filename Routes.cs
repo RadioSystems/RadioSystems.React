@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Orchard.Mvc.Routes;
 
-namespace Orchard.React {
+namespace RadioSystems.React {
     public class Routes : IRouteProvider {
         public IEnumerable<RouteDescriptor> GetRoutes() {
             return new[] {
@@ -11,13 +11,13 @@ namespace Orchard.React {
                     Route = new Route(
                         "React",
                         new RouteValueDictionary {
-                            {"area", "Orchard.React"},
+                            {"area", "RadioSystems.React"},
                             {"controller", "React"},
                             {"action", "Index"}
                         },
                         new RouteValueDictionary(),
                         new RouteValueDictionary {
-                            {"area", "Orchard.React"}
+                            {"area", "RadioSystems.React"}
                         },
                         new MvcRouteHandler())
                 },
@@ -25,13 +25,13 @@ namespace Orchard.React {
                     Route = new Route(
                         "React/{*path}",
                         new RouteValueDictionary {
-                            {"area", "Orchard.React"},
+                            {"area", "RadioSystems.React"},
                             {"controller", "React"},
                             {"action", "Index"}
                         },
                         new RouteValueDictionary(),
                         new RouteValueDictionary {
-                            {"area", "Orchard.React"}
+                            {"area", "RadioSystems.React"}
                         },
                         new MvcRouteHandler())
                 }

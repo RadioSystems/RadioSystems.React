@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Orchard.React.Models {
+namespace RadioSystems.React.Models {
     public class ReactUserModel {
         public int Id { get; set; }
         public string Username { get; set; }

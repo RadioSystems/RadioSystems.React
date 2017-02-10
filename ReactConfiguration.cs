@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Orchard.Environment;
-using Orchard.React.Services;
+using RadioSystems.React.Services;
 
-namespace Orchard.React {
+namespace RadioSystems.React {
     public class ReactConfiguration : IOrchardShellEvents {
         private readonly IReactHarvester _reactHarvester;
         private readonly IReactCodeGenerator _reactCodeGenerator;

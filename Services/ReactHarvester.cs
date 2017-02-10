@@ -8,9 +8,9 @@ using Orchard.Environment.Extensions;
 using Orchard.Environment.Extensions.Models;
 using Orchard.FileSystems.VirtualPath;
 using Orchard.Logging;
-using Orchard.React.Constants;
+using RadioSystems.React.Constants;
 
-namespace Orchard.React.Services {
+namespace RadioSystems.React.Services {
     public class ReactHarvester : IReactHarvester {
         private readonly ShellDescriptor _shellDescriptor;
         private readonly IExtensionManager _extensionManager;

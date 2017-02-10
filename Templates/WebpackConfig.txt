@@ -4,7 +4,7 @@ var path = require("path");
 
 module.exports = {
     entry: {
-        "Orchard.React": "./Modules/Orchard.React/ReactBase/index.js"
+        "RadioSystems.React": "./Modules/RadioSystems.React/ReactBase/index.js"
     },
     output: {
         filename: "./Modules/[name]/Scripts/[name].js"

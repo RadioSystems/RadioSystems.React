@@ -43,7 +43,7 @@
 /******/ ([
 /* 0 */
 /*!**************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/index.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/index.js ***!
   \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -30442,7 +30442,7 @@
 /***/ },
 /* 268 */
 /*!*****************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/store/configureStore.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/store/configureStore.js ***!
   \*****************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -30503,7 +30503,7 @@
 /***/ },
 /* 270 */
 /*!*****************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/reducers/rootReducer.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/reducers/rootReducer.js ***!
   \*****************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -30553,7 +30553,7 @@
 /***/ },
 /* 271 */
 /*!*****************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/reducers/userReducer.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/reducers/userReducer.js ***!
   \*****************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -30590,7 +30590,7 @@
 /***/ },
 /* 272 */
 /*!*************************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/action_types/UserActionTypes.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/action_types/UserActionTypes.js ***!
   \*************************************************************************/
 /***/ function(module, exports) {
 
@@ -30604,7 +30604,7 @@
 /***/ },
 /* 273 */
 /*!*********************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/initialState.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/initialState.js ***!
   \*********************************************************/
 /***/ function(module, exports) {
 
@@ -30627,7 +30627,7 @@
 /***/ },
 /* 274 */
 /*!******************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/reducers/modalReducer.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/reducers/modalReducer.js ***!
   \******************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -30663,7 +30663,7 @@
 /***/ },
 /* 275 */
 /*!*******************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/reducers/createReducer.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/reducers/createReducer.js ***!
   \*******************************************************************/
 /***/ function(module, exports) {
 
@@ -30688,7 +30688,7 @@
 /***/ },
 /* 276 */
 /*!*************************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/handlers/ModalActionsHandler.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/handlers/ModalActionsHandler.js ***!
   \*************************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -30719,7 +30719,7 @@
 /***/ },
 /* 277 */
 /*!**************************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/action_types/ModalActionTypes.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/action_types/ModalActionTypes.js ***!
   \**************************************************************************/
 /***/ function(module, exports) {
 
@@ -30951,7 +30951,7 @@
 /***/ },
 /* 285 */
 /*!**********************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/routes/routes.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/routes/routes.js ***!
   \**********************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -31934,7 +31934,7 @@
 	
 	var _DealerApi2 = _interopRequireDefault(_DealerApi);
 	
-	var _ModalActions = __webpack_require__(/*! ../../../Orchard.React/ReactBase/actions/ModalActions */ 295);
+	var _ModalActions = __webpack_require__(/*! ../../../RadioSystems.React/ReactBase/actions/ModalActions */ 295);
 	
 	var _ModalActions2 = _interopRequireDefault(_ModalActions);
 	
@@ -33957,7 +33957,7 @@
 /***/ },
 /* 295 */
 /*!*****************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/actions/ModalActions.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/actions/ModalActions.js ***!
   \*****************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -34028,7 +34028,7 @@
 /***/ },
 /* 296 */
 /*!*************************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/components/modals/ModalTypes.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/components/modals/ModalTypes.js ***!
   \*************************************************************************/
 /***/ function(module, exports) {
 
@@ -35673,7 +35673,7 @@
 /***/ },
 /* 314 */
 /*!******************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/authorizer/Authorizer.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/authorizer/Authorizer.js ***!
   \******************************************************************/
 /***/ function(module, exports) {
 
@@ -35720,7 +35720,7 @@
 /***/ },
 /* 315 */
 /*!***********************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/containers/OrchardReactApp.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/containers/OrchardReactApp.js ***!
   \***********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -35817,7 +35817,7 @@
 /***/ },
 /* 316 */
 /*!**********************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/containers/ModalContainer.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/containers/ModalContainer.js ***!
   \**********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -35915,7 +35915,7 @@
 /***/ },
 /* 317 */
 /*!***********************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/components/modals/ModalMap.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/components/modals/ModalMap.js ***!
   \***********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -35956,7 +35956,7 @@
 /***/ },
 /* 318 */
 /*!********************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/components/modals/Alert.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/components/modals/Alert.js ***!
   \********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -36039,7 +36039,7 @@
 /***/ },
 /* 319 */
 /*!**********************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/components/modals/Confirm.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/components/modals/Confirm.js ***!
   \**********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37010,7 +37010,7 @@
 /***/ },
 /* 326 */
 /*!************************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/components/AccessDeniedPage.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/components/AccessDeniedPage.js ***!
   \************************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37066,7 +37066,7 @@
 /***/ },
 /* 327 */
 /*!********************************************************************!*\
-  !*** ./Modules/Orchard.React/ReactBase/components/NotFoundPage.js ***!
+  !*** ./Modules/RadioSystems.React/ReactBase/components/NotFoundPage.js ***!
   \********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37121,4 +37121,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=Orchard.React.js.map
+//# sourceMappingURL=RadioSystems.React.js.map

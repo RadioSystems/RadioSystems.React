@@ -2,11 +2,11 @@
 using System.Linq;
 using NHibernate;
 using Orchard.Data;
-using Orchard.React.Models;
+using RadioSystems.React.Models;
 using Orchard.Roles.Models;
 using Orchard.Users.Models;
 
-namespace Orchard.React.Services {
+namespace RadioSystems.React.Services {
     public class ReactUserService : IReactUserService {
         private readonly ISession _session;
 

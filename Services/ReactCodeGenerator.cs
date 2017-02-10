@@ -2,9 +2,9 @@
 using System.IO;
 using System.Linq;
 using System.Web.Hosting;
-using Orchard.React.Constants;
+using RadioSystems.React.Constants;
 
-namespace Orchard.React.Services {
+namespace RadioSystems.React.Services {
     public class ReactCodeGenerator : IReactCodeGenerator{
         public void GenerateRootReducerFile(IEnumerable<string> reducerFilePaths) {
             var reducerImportStatements = new StringWriter();

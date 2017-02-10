@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using Orchard;
 
-namespace Orchard.React.Services {
+namespace RadioSystems.React.Services {
     public interface IReactHarvester : IDependency {
         IEnumerable<string> ReactFolderPaths();
         IEnumerable<string> HarvestReactEnabledModules();
