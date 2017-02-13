@@ -36,7 +36,9 @@ namespace RadioSystems.React.Services {
 
             var filePaths = routeFilePaths as string[] ?? routeFilePaths.ToArray();
             foreach (var route in filePaths) {
-                var routeObjectName = route.Split('/').Last().Replace(".js", string.Empty);
+                var splitRoute = route.Split('/');
+                var moduleName = splitRoute[2].Replace(".", string.Empty); //expect a path of the form ~/Modules/{ModuleName} here
+                var routeObjectName = $"{moduleName}{splitRoute.Last()}".Replace(".js", string.Empty);
                 routeImportStatements.Write($"import {routeObjectName} from \"{route.Replace("~/Modules", "../../..")}\"");
                 routeImportStatements.WriteLine();
                 //This ensures no comma on last registration
