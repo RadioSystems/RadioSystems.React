@@ -250,3 +250,8 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+ReactBase/components/modals/ModalMap.js
+ReactBase/reducers/RootReducer.js
+ReactBase/routes/routes.js
+Scripts/Orchard.React.js
+Scripts/Orchard.React.js.map
