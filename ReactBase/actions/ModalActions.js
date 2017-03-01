@@ -20,6 +20,16 @@ class ModalActions{
             }
         }
     }
+    static showError(errors) {
+        return {
+            type: actionTypes.SHOW_MODAL,
+            modalType: modalTypes.ERROR,
+            modalProps: {
+                errors: errors,
+                type: "alert"
+            }
+        }
+    }
     static showModal(type, props){
         return {type: actionTypes.SHOW_MODAL, modalType: type, modalProps: props};
     }

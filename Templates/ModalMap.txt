@@ -1,12 +1,14 @@
 ﻿import * as types from "./ModalTypes";
 import Alert from "./Alert";
 import Confirm from "./Confirm";
+import Error from "./Error";
 
 $$ModalImports$$
 
 const modalMap = {
     [types.ALERT]: Alert,
-    [types.CONFIRM]: Confirm
+    [types.CONFIRM]: Confirm,
+	[types.ERROR]: Error
 }
 
 export default Object.assign({}, modalMap, $$ModalObjects$$);

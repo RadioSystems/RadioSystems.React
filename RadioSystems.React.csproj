@@ -132,13 +132,14 @@
     <Content Include="ReactBase\action_types\ModalActionTypes.js" />
     <Content Include="ReactBase\action_types\UserActionTypes.js" />
     <Content Include="ReactBase\authorizer\Authorizer.js" />
+    <Content Include="ReactBase\components\modals\Error.js" />
     <Content Include="ReactBase\components\modals\Alert.js" />
     <Content Include="ReactBase\components\modals\Confirm.js" />
     <Content Include="ReactBase\components\modals\ModalMap.js" />
     <Content Include="ReactBase\components\modals\ModalTypes.js" />
     <Content Include="ReactBase\components\AccessDeniedPage.js" />
     <Content Include="ReactBase\components\NotFoundPage.js" />
-    <Content Include="ReactBase\components\OrchardReactWelcomePage.js" />
+    <Content Include="ReactBase\components\OrchardReactWelcome.js" />
     <Content Include="ReactBase\containers\ModalContainer.js" />
     <Content Include="ReactBase\containers\OrchardReactApp.js" />
     <Content Include="ReactBase\handlers\ModalActionsHandler.js" />
@@ -146,6 +147,7 @@
     <Content Include="ReactBase\index.js" />
     <Content Include="ReactBase\initialState.js" />
     <Content Include="ReactBase\reducers\createReducer.js" />
+    <Content Include="ReactBase\reducers\injectReducer.js" />
     <Content Include="ReactBase\reducers\modalReducer.js" />
     <Content Include="ReactBase\reducers\rootReducer.js" />
     <Content Include="ReactBase\reducers\userReducer.js" />

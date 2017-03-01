@@ -5,11 +5,14 @@ import modalReducer from "./modalReducer";
 
 $$ReducerImports$$
 
-const rootReducer = combineReducers({
-    routing: routerReducer,
-	user: userReducer,
-	modal: modalReducer,
-$$ReducerRegistration$$
-});
+const rootReducer = (asyncReducers) => { 
+    return combineReducers({
+        routing: routerReducer,
+	    user: userReducer,
+	    modal: modalReducer,
+		$$ReducerRegistration$$,
+        ...asyncReducers
+    });
+}
 
 export default rootReducer;

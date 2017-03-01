@@ -6,9 +6,6 @@ import {syncHistoryWithStore} from "react-router-redux";
 import configureStore from "./store/configureStore";
 import routes from "./routes/routes";
 import Authorizer from "./authorizer/Authorizer";
-
-import OrchardReactApp from "./containers/OrchardReactApp";
-import OrchardReactWelcomePage from "./components/OrchardReactWelcomePage";
 import AccessDeniedPage from "./components/AccessDeniedPage";
 import NotFoundPage from "./components/NotFoundPage";
 
@@ -19,21 +16,31 @@ function authorize(permission) {
     return Authorizer.authorize(permission, store.getState().user);
 }
 
+const plainRoutes = [
+    {
+        path: '/react',
+        getComponent: (location, callback) => {
+            require.ensure([], (require) => {
+                const app = require("./containers/OrchardReactApp").default;
+                callback(null, app);
+            });
+        },
+        childRoutes: routes.map((route) => {
+            return route(authorize, store);
+        })
+    },
+    {
+        path: "/users/account/accessdenied",
+        component: AccessDeniedPage
+    },
+    {
+        path: "*",
+        component: NotFoundPage
+    }
+];
+
 render(
     <Provider store={store}>
-        <Router history={history}>
-            <Route path="/react" component={OrchardReactApp}>
-                <IndexRoute component={OrchardReactWelcomePage}/>
-                {routes.map((route, index) => {
-                    var routeProps = route.props || {};
-                    if (typeof(route) === "function") {
-                        routeProps = route(authorize, store).props;
-                    }
-                    return <Route {...routeProps} key={index}/>;
-                })}
-            </Route>
-            <Route path="/users/account/accessdenied" component={AccessDeniedPage}/>
-            <Route path="*" component={NotFoundPage}/>
-        </Router>
+        <Router history={history} routes={plainRoutes} />
     </Provider>, document.getElementById("orchard-react")
 );

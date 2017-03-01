@@ -2,6 +2,7 @@
 import React, {Component, cloneElement} from "react";
 import {Link} from "react-router";
 import {connect} from "react-redux";
+import OrchardReactWelcome from "../components/OrchardReactWelcome";
 import ModalContainer from "./ModalContainer";
 import ModalActions from "../actions/ModalActions";
 import Authorizer from "../authorizer/Authorizer";
@@ -25,14 +26,13 @@ class OrchardReactApp extends Component {
         return (
             <div className="orchard-react-container">
                 {
-                    cloneElement(this.props.children, Object.assign({}, this.props,
-                        {   
-                            authorize: this.authorize
-                        })
-                    )
+                    (this.props.children === null) ? <OrchardReactWelcome /> : cloneElement(this.props.children, Object.assign({}, this.props,
+                    {
+                        authorize: this.authorize
+                    }))
                 }
                 {
-                  //only load modals if bootstrap is present
+                  //only render modals if bootstrap is present
                    jqueryAndBootstrapDefined ?  <ModalContainer /> : null
                 }
             </div>    

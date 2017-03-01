@@ -4,18 +4,21 @@ import ModalActions from "../actions/ModalActions";
 import ModalMap from "../components/modals/ModalMap";
 
 class Modal extends Component {
-    componentDidUpdate(){
+    componentDidUpdate() {
+        var modal = $(this.refs.modal);
         if(this.props.visible){
-            $(this.refs.modal).modal("show");
+            modal.modal("show");
         }else{
-            $(this.refs.modal).modal("hide");
+            modal.modal("hide");
+            $("body").removeClass("modal-open");
+            $(".modal-backdrop").remove();
         }
     }
     render() {
         const ModalContent = ModalMap[this.props.type];
         return (
-            <div ref="modal" className="modal fade modal-container" role="dialog" data-backdrop="static">
-                <div className="modal-dialog" role="document">
+            <div ref="modal" className={"modal fade modal-container " + this.props.modalProps.type} role="dialog" data-backdrop="static">
+                <div className={"modal-dialog modal-" + this.props.modalProps.modalSize } role="document">
                     <div className="modal-content">
                         <ModalContent hideModal={this.props.hideModal} {...this.props.modalProps} />
                     </div>
